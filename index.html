@@ -7,73 +7,127 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Mostafa khalil</title>
+    <script defer src="app.js"></script>
 </head>
 <body>
     <header>
-        <a  href="#" class="logo">Mostafa</a>
+        <a  href="#main" class="logo">Mostafa</a>
         <nav class="navigation">
-            <a href="#services">Services</a>
-            <a href="/cvFile/Mostafa cv2-2.pdf">Projects</a>
-            <a href="#Contact">Contact</a>
+            <a class="nav-item" href="#main">About</a>
+            <a class="nav-item" href="#mh-experince">Education</a>
+            <a class="nav-item" href="#projects">Projects</a>
+            <a class="nav-item" href="#Contact">Contact</a>
 
         </nav>
+        <a href="javascript:void(0);" class="sidemenu-toggler">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div class="sidemenu">
+            <a href="javascript:void(0);" class="close"></a>
+            <nav>
+                <ul>
+                    <li><a href="#main">About</a></li>
+                    <li><a href="#mh-experince">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class=" main">
-        <div>
-            <h2>Hello, Im Mostafa<br></h2>
+    <section class=" main hidden" id="main">
+
+        <div >
+            <h2>Hello, I'm Mostafa<br></h2><br>
             <p>
-                I'm a practical software engineer with ambition and perseverance,Fast learner and teamwork, today I am looking for a job to be my suitable opportunity to prove my abilities and skills that I gained through years of education and my own projects,and on the other hand, to acquire new skills and technology</p>
-            <a href="/cvFile/Mostafa cv2-2.pdf"  class="main-btn"> Get CV&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-file-arrow-down"></i> </a>
+                I'm a practical software engineer with ambition and perseverance,Fast learner and teamworker, today I am looking for a job to be my suitable opportunity to prove my abilities and skills that I gained through years of education and my own projects,and on the other hand to acquire new skills and technology.</p><br><br>
+                <p>Here are a few technologies I’ve been working with recently:</p>
+                <ul class="skills-list">
+                    <li>Angular</li>
+                    <li>Nodejs</li>
+                    <li>Java</li>
+                    <li>Html</li>
+                    <li>TypeScript</li>
+                    <li>Css</li>
+                    </ul>
+                <a href="/cvFile/Mostafa cv2-2.pdf"  class="main-btn"> Open CV&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-file-pdf"></i> </a>
+          
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/mostafakhalill/"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/Mostafakhalil21"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.instagram.com/mostafakhalil21/?hl=en"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
 
 
             </div>
+            <br>
+            <a style="color: white;"><i class="fa-solid fa-phone"></i> +972 050-354-0458</a>&nbsp;&nbsp;&nbsp;
+            <a style="color: white;"><i class="fa-solid fa-envelope"></i> mostafakhalil056@gmail.com</a>
+            <div 
+            class="child"><img alt="Gift's headshot" src="/images/WhatsApp Image 2022-09-23 at 13.26.43.jpeg"   
+           style="width:200px; clip-path: circle();"      class="rounded-full bio g-image g-image--lazy g-image--loaded" >
+       </div>
         </div>
         <div 
              class="profile"><img alt="Gift's headshot" src="/images/WhatsApp Image 2022-09-23 at 13.26.43.jpeg"   
             style="width:200px; clip-path: circle(); float: right;"      class="rounded-full bio g-image g-image--lazy g-image--loaded" >
         </div>
     </section>
-    <section class="cards" id="services">
-        <h2 class="title">Services</h2>
-        <div class="content">
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-pen-to-square"></i>
+
+
+    <section class="mh-experince hidden" id="mh-experince">
+        
+
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <div class="mh-education">
+                        <h3>Education</h3>
+                        <div class="mh-education-details">
+                            <div class="mh-education-item">
+                                <h4>Practical software engineering - <a href="https://braude.ort.org.il/">ORT College</a></h4>
+                                <div class="md-eduyear">2020-2022</div>
+                            </div>
+                            <div class="mh-education-item">
+                                <h4>Bachelor of Physical Education and Sport Science - <a href="https://www.aaup.edu/">aau</a></h4>
+                                <div class="md-eduyear">2016-2020</div>
+                                
+
+                            </div>
+                        
+                        
+                            <div class="mh-education-item">
+                                <h4>Course Full Stack Developer - <a href="https://braude.ort.org.il/">ZioNet</a></h4>
+                                <div class="md-eduyear">2022</div>
+                                <p>3 Months</p>
+                            </div>
+                            <div class="mh-education-item">
+                                <h4>Course QA Automation - <a href="https://www.udemy.com/course/automate/">Udemy</a></h4>
+                                <div class="md-eduyear">2022</div>
+                            </div>
+      
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="info">
-                    <h3>Script Writing</h3>
-                    <p>i just need to write something here</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                </div>
-                <div class="info">
-                    <h3>Script Writing</h3>
-                    <p>i just need to write something here</p>
-                </div>
-            </div> <div class="card">
-                <div class="icon">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                </div>
-                <div class="info">
-                    <h3>Script Writing</h3>
-                    <p>i just need to write something here</p>
+                <div class="column">
+                    <div class="mh-work">
+                        <h3>Work Experience</h3>
+                        <div class="mh-experience-details">
+                            <div class="mh-work-item">
+                                <h4>NO Experience YET <i style="color:#0bceaf ;"  class="fa-regular fa-face-sad-tear"></i></h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="projects" id="projects" >
+    </section >
+    <section class="projects hidden" id="projects"  >
             <h2 class="title">Projects</h2>
             <div class="content">
-                <div class="project-card">
+                <div class="project-card hidden">
                     <div class="project-image">
                         <img src="/images/WhatsApp Image 2022-09-24 at 00.02.10.jpeg" />
                     </div>
@@ -85,7 +139,7 @@
                             </strong>
                         </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card hidden">
                     <div class="project-image">
                         <img src="/images//WhatsApp Image 2022-09-24 at 00.57.31.jpeg" />
                     </div>
@@ -98,36 +152,53 @@
                         </div>
                 </div>
             </div>
-            
-    </section>
-    <section class="skills-section">
-        <div class="skills">
-            <div class="skill">
-                <div class="skill-name">Html</div>
-                <div class="skill-bar">
-                    <div class="skill-per" per="90%" style="max-width:90% ;"></div>
-                </div>
-            </div>
-        </div>
-        <div class="skills">
-            <div class="skill">
-                <div class="skill-name">css</div>
-                <div class="skill-bar">
-                    <div class="skill-per" per="75%" style="max-width:75% ;"></div>
-                </div>
-            </div>
-        </div>
-        <div class="skills">
-            <div class="skill">
-                <div class="skill-name">java</div>
-                <div class="skill-bar">
-                    <div class="skill-per" per="90%" style="max-width:90% ;"></div>
-                </div>
-            </div>
-        </div>
         
     </section>
+    <section class="hidden" id="Contact">
+        <div class="row">
+                <h1>Get In Touch</h1>
+        </div>
+        <div class="row">
+                <h4 style="text-align:center; color: white;">I'd love to hear from you!</h4>
+        </div>
+        <form action="https://formsubmit.co/mostafakhalil056@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Website Email">
+            <div class="row input-container">
+                <div class="col-xs-12">
+                    <div class="styled-input wide">
+                        <input type="text" name="name" placeholder="Name" />
+                        
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="styled-input wide">
+                        <input type="email" name="email" placeholder="Email Address" required />
+                        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+                         
+                    </div>
+                </div>
+           
+                <div class="col-xs-12">
+                    <div class="styled-input wide">
+                        <textarea required name="message" placeholder="Message"></textarea>
+                        
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <button type="submit" class="btn-lrg submit-btn">Send Message</button>
+                </div>
+            </div>
+        </form>
+        </div>
+    
+    </section>
 
-
+    <footer class="footer hidden">
+        <p>Built by <Strong>Mostafa Khalil</Strong></p>
+           
+  
+    </footer>
+<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
 </body>
+
 </html>

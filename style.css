@@ -266,6 +266,7 @@ transition: 0.7s ease;
     font-size: 2.2em;
     font-weight: 800;
     margin-bottom: 30px;
+    color: white;
 }
 .content{
     display: flex;
@@ -708,3 +709,20 @@ visibility: hidden;
         
     }
 }
+
+.certificate-container {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+}
+.image-certificates {
+    display: flex; /* Use flexbox to arrange the images horizontally */
+    margin-top: 40px;
+  }
+
+  /* Style for individual images */
+  .image-certificate img {
+    max-width: 40%; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+  }
+

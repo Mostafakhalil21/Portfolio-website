@@ -10,12 +10,25 @@
     <script defer src="app.js"></script>
 </head>
 <body>
+    <!-- nev bar -->
     <header>
         <a  href="#main" class="logo">Mostafa</a>
         <nav class="navigation">
             <a class="nav-item" href="#main">About</a>
-            <a class="nav-item" href="#mh-experince">Education</a>
+            ​  <div class="dropdown">
+                <a href="#mh-experince" class="dropbtn">Education 
+                  <i class="fa fa-caret-down"></i>
+                </a>
+                <div class="dropdown-content">
+                  <a href="#mh-experince">Courses</a>
+                  <a href="#mh-experince">Work Experience</a>
+
+
+                </div>
+              </div> 
+            <!-- <a class="nav-item" href="#mh-experince">Education/Courses</a> -->
             <a class="nav-item" href="#projects">Projects</a>
+            <a class="nav-item" href="#certificate">Certificates</a>
             <a class="nav-item" href="#Contact">Contact</a>
 
         </nav>
@@ -30,14 +43,15 @@
                 <ul>
                     <li><a href="#main">About</a></li>
                     <li><a href="#mh-experince">Education</a></li>
+                    <li><a href="#mh-experince">Work Experience</a></li>
+                    <li><a href="#mh-experince">Courses</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#Contact">Contact</a></li>
-
                 </ul>
             </nav>
         </div>
     </header>
-
+    <!-- Info and Technical Qualifications -->
     <section class=" main hidden" id="main">
 
         <div >
@@ -48,7 +62,7 @@
                 <ul class="skills-list">
                     <li><strong><span style="font-size: 13px;">Programming languages:</span></strong> Java, Python, Bash Scripting, TypeScript/JS, HTML.</li>
                     <li><strong><span style="font-size: 13px;">Cloud Technologies:</span></strong> Amazon Web Services (AWS) - EC2, S3, Lambda, RDS, etc.</li>
-                    <li><strong><span style="font-size: 13px;">Software Applications:</span></strong> Microsoft Suite (Excel, Word, Access, Power Point), Visual Studio Code , Postman.</li>
+                    <li><strong><span style="font-size: 13px;">Software Applications:</span></strong> Microsoft Suite (Excel, Word, Power Point), Visual Studio Code , Postman.</li>
                     <li><strong><span style="font-size: 13px;">Database Management:</span></strong> Database SQL command, MySQL, MongoDB.</li>
                     <li><strong><span style="font-size: 13px;">Operating Systems:</span></strong> Windows, Linux.</li>
                     <li><strong><span style="font-size: 13px;">Monitoring Tools:</span></strong> Grafana, Datadog, PRTG, Icinga.</li>
@@ -77,7 +91,7 @@
         </div>
     </section>
 
-
+    <!-- Education and Experience -->
     <section class="mh-experince hidden" id="mh-experince">
         
 
@@ -88,27 +102,34 @@
                         <h3>Education</h3>
                         <div class="mh-education-details">
                             <div class="mh-education-item">
-                                <h4>Practical software engineering - <a href="https://braude.ort.org.il/">ORT College</a></h4>
+                                <h4>Practical software engineering - <a href="https://braude.ort.org.il/">Ort Braude College karmiel</a></h4>
                                 <div class="md-eduyear">2020-2022</div>
                             </div>
                             <div class="mh-education-item">
-                                <h4>Bachelor of Physical Education and Sport Science - <a href="https://www.aaup.edu/">aau</a></h4>
+                                <h4>Bachelor of Physical Education and Sport Science - <a>aau</a></h4>
                                 <div class="md-eduyear">2016-2020</div>
                                 
 
                             </div>
                         
-                        
+                            <h3>Courses</h3>
                             <div class="mh-education-item">
-                                <h4>Course Full Stack Developer - <a href="https://braude.ort.org.il/">ZioNet</a></h4>
+                                <h4>Aws Cloud Tools and Techniques (Devops) -  <a href="https://nmco.co.il/">New-Media college המכללה לניו-מדיה</a></h4>
+                                <p>AWS Cloud Tools and Techniques is a cloud and DevOps-centered training, aiming to give the student a solid understanding and hands-on capabilities in the AWS cloud specifically, and in other cloud environments. Having passed the intense program and experienced the practical exercises, a student is ready for the challenges of a modern, cloud-based software development environment.AWS Cloud Tools and Techniques is a cloud and DevOps-centered training, aiming to give the student a solid understanding and hands-on capabilities in the AWS cloud specifically, and in other cloud environments. Having passed the intense program and experienced the practical exercises, a student is ready for the challenges of a modern, cloud-based software development environment.…see more
+                                    Skills: Continuous Integration and Continuous Delivery (CI/CD) · Amazon Web Services (AWS) · Bash · Jenkins · Terraform · Linux · Python (Programming Language)</p>
+                                <div class="md-eduyear">Nov 2022 - Apr 2023</div>
+                            </div>
+                            <div class="mh-education-item">
+                                <h4>Course Full Stack Developer - <a href="https://www.zion-net.co.il/">ZioNet</a></h4>
                                 <div class="md-eduyear">2022</div>
                                 <p>3 Months</p>
                             </div>
                             <div class="mh-education-item">
-                                <h4>Course QA Automation - <a href="https://www.udemy.com/course/automate/">Udemy</a></h4>
-                                <div class="md-eduyear">2022</div>
+                                <h4>Ultimate AWS Certified Solutions Architect Associate - <a href="https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c03/learn/lecture/13528514?start=148#overview">Udemy</a></h4>
+                                <div class="md-eduyear">2023</div>
+                                
                             </div>
-      
+
                         </div>
                     </div>
                     
@@ -118,13 +139,26 @@
                         <h3>Work Experience</h3>
                         <div class="mh-experience-details">
                             <div class="mh-work-item">
-                                <h4>NO Experience YET <i style="color:#0bceaf ;"  class="fa-regular fa-face-sad-tear"></i></h4>
-                        </div>
+                                <h4>NOC engineer - <a href="https://www.moovingon.com/">MoovingOn </a></h4>
+                                <p style="color: white;">As a NOC Engineer at MoovingOn LTD since January 2023, my role involves monitoring production environments, responding to alerts, and troubleshooting incidents to restore services.Collaborate with cross-functional teams, escalate complex issues, document incidents, and engage in ongoing technical development.</p>
+                                <div class="md-eduyear">Jan - 2023 Present</div>
+                            </div>
                     </div>
+                    <div class="mh-experience-details">
+                        <div class="mh-work-item">
+                            <h4>Angular tutor - <a>Ort Braude College karmiel</a></h4>
+                            <p style="color: white;">diverse group of students. With a strong focus on front-end development and TypeScript programming, I have guided
+                                my students through the intricacies of creating dynamic and responsive web applications. Through interactive sessions
+                                and hands-on projects, I have effectively communicated the essential concepts of Angular, equipping my students with
+                                the skills needed to build modern, user-friendly interfaces </p>
+                            <div class="md-eduyear"> Jan-May-2022</div>
+                        </div>
+                </div>
                 </div>
             </div>
         </div>
     </section >
+    <!-- Projects -->
     <section class="projects hidden" id="projects"  >
             <h2 class="title">Projects</h2>
             <div class="content">
@@ -152,20 +186,46 @@
                             </strong>
                         </div>
                 </div>
+                <div class="project-card hidden">
+                    <div class="project-image">
+                        <img src="./images/portfolio-website.png" />
+                    </div>
+                        <div class="project-info">
+                            <p class="project-category"> using Terraform and AWS Cloud to set up static website hosting fully automated</p>
+                            <strong class="project-title">
+                                <span>portfolio website</span>
+                                <a class="more-details" href="https://github.com/Mostafakhalil21/Portfolio-website"><i class="fa-brands fa-github"></i></a>
+                            </strong>
+                        </div>
+                </div>
+                <div class="project-card hidden">
+                    <div class="project-image">
+                        <img src="./images/portfolio-website.png" />
+                    </div>
+                        <div class="project-info">
+                            <p class="project-category">Need changes</p>
+                            <strong class="project-title">
+                                <span>Book Shop</span>
+                                <a class="more-details" href="https://github.com/mahmoodamara/projectzionet2"><i class="fa-brands fa-github"></i></a>
+                            </strong>
+                        </div>
+                </div>
             </div>
         
     </section>
-    <div class="certificate-container">
+    <!-- Certificates -->
+    <div class="certificate-container hidden" id="certificate">
     <section id="my-certificates">
         <h2 class="title">Certificates</h2>
         
         <div class="image-certificate">
-          <img src="./images/AWS-Certified-Solutions-Architect-Associate_badge.3419559c682629072f1eb968d59dea0741772c0f.png" alt="Description of the first image">
-          <img src="./images/AWS-Certified-Solutions-Architect-Associate_badge.3419559c682629072f1eb968d59dea0741772c0f.png" alt="Description of the second image">
+          <img id="certificate_1" src="./images/AWS-Certified-Solutions-Architect-Associate_badge.3419559c682629072f1eb968d59dea0741772c0f.png" alt="Description of the first image">
+          <img id="certificate_2" src="./images/AWS-Certified-Cloud-Practitioner_badge.634f8a21af2e0e956ed8905a72366146ba22b74c.png" alt="Description of the second image">
+        
         </div>
       </section>
     </div>
-      
+    <!-- Contact -->
     <section class="hidden" id="Contact">
         <div class="row">
                 <h1>Get In Touch</h1>
@@ -204,7 +264,7 @@
         </div>
     
     </section>
-
+    <!-- Footer -->
     <footer class="footer hidden">
         <p>Built by <Strong>Mostafa Khalil</Strong></p>
            

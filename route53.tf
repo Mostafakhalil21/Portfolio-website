@@ -8,7 +8,7 @@ resource "aws_route53_record" "s3_bucket" {
   type    = "A"
 
   alias {
-    name                   = "http://aboutmostafa.com.s3-website.eu-central-1.amazonaws.com"
+    name                   = "s3-website.eu-central-1.amazonaws.com"
     zone_id                = "Z21DNDUVLTQW6Q" 
     evaluate_target_health = false
   }
